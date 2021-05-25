@@ -1,1 +1,48 @@
-<p>progress works!</p>
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Striped Progress bar {{ parametro1 }}<a class="get-code" data-toggle="collapse" href="#pgr3" aria-expanded="true"><i class="fa fa-code" title="" data-toggle="tooltip" data-original-title="Get Code"></i></a></h4>
+
+
+                <div class="progress m-t-20">
+                    <div [style.width]="getProgreso1()" class="progress-bar bg-info progress-bar-striped active" aria-valuenow="85" style="height:10px;" role="progressbar">
+                    </div>
+                </div>
+
+                <div class="progress m-t-20">
+                    <div [style.width]="getProgreso2()" class="progress-bar bg-primary progress-bar-striped active" aria-valuenow="85" style="height:10px;" role="progressbar">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <!-- <app-incrementador (valorSalida)="cambioValorHijo($event)" [progreso]=parametro1></app-incrementador> -->
+
+                <app-incrementador (valorSalida)="parametro1 = $event" [progreso]=parametro1 [btnClass]="'btn-warning'"></app-incrementador>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-6">
+        <div class="card">
+            <div class="card-body">
+
+                <!-- <app-incrementador (valorSalida)="cambioValorHijo($event)" [progreso]=parametro2></app-incrementador> -->
+                <app-incrementador (valorSalida)="parametro2 =$event" [progreso]=parametro2 [btnClass]="'btn-primary'"></app-incrementador>
+
+
+            </div>
+        </div>
+    </div>
+
+</div>

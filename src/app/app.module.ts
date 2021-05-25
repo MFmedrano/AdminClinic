@@ -10,6 +10,8 @@ import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { SharedModule } from './shared/shared.module';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
+import { ProgressComponent } from './pages/progress/progress.component';
+// import { IncrementadorComponent } from './components/incrementador/incrementador.component';
 
 
 // import { DashboardComponent } from './pages/dashboard/dashboard.component';
@@ -25,9 +27,10 @@ import { NopagefoundComponent } from './nopagefound/nopagefound.component';
   declarations: [
     AppComponent,    
     // LoginComponent,
-    // RegisterComponent,
+    // RegisterComponent,    
+    NopagefoundComponent, 
     
-    NopagefoundComponent,    
+    // IncrementadorComponent,    
     // BreadcrumbsComponent,
     // SidebarComponent,
     // HeaderComponent,
